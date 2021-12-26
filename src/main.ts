@@ -1,15 +1,15 @@
-import Vue from "vue";
-import Buefy from "buefy";
-import "buefy/dist/buefy.css";
-import "@mdi/font/css/materialdesignicons.css";
+import Vue from "vue"
+import Buefy from "buefy"
+import "buefy/dist/buefy.css"
+import "@mdi/font/css/materialdesignicons.css"
 
-import App from "./App.vue";
-import router from "./router";
+import App from "./App.vue"
+import router from "./router"
 
-Vue.config.productionTip = false;
-
-Vue.use(Buefy);
+Vue.config.productionTip = false
+export const bus = new Vue()
+Vue.use(Buefy)
 new Vue({
   router,
-  render: h => h(App)
-}).$mount("#app");
+  render: (h) => h(App),
+}).$mount("#app")
